@@ -1,0 +1,28 @@
+"use client";
+
+import { removeCartItem } from "@/lib/actions/cart-action";
+import { useMutation } from "@tanstack/react-query";
+import { useTranslations } from "next-intl";
+import { toast } from "sonner";
+
+export default function useRemoveCartItem() {
+  // Translation
+  const t = useTranslations();
+
+  // Mutation
+  const { isPending, error, mutate } = useMutation({
+    mutationFn: async ({ productId, token }: { productId: string; token: string }) => {
+      const response = await removeCartItem({ productId, token });
+
+      return response;
+    },
+    onSuccess: () => {
+      toast.success(t("login-successful"));
+    },
+    onError: () => {
+      toast.error(t("login-failed"));
+    },
+  });
+
+  return { isPending, error, removeCartItem: mutate };
+}
