@@ -1,5 +1,5 @@
 {
-  "metadata-title": "روز للتجارة الالكترونية",
+  "metadata-title": "روز للشراء الالكتروني",
   "metadata-description": "منصة لشراء وبيع المنتجات.",
   "something-went-wrong": "حدث خطأ ما!",
   "try-again": "حاول مرة اخرى",
@@ -93,16 +93,12 @@
   "re-enter-password": "إعادة إدخال كلمة المرور",
   "create-password": "إنشاء كلمة المرور",
   "confirm-password-required": "تأكيد كلمة المرور المطلوبة",
-  "ahmed-mohamed": "أحمد محمد",
+ 
   "customer": "عميل",
   "testimonials-feedback": "لقد تفاجأت بجودة المنتجات وسرعة التوصيل الخدمة احترافية والتفاصيل مدروسة بدقة. فريق العمل دائمًا متجاوب ويقدم حلولًا عملية لكل الاستفسارات. أنصح الجميع بالتجربة، فلن تشعروا بخيبة أمل أبدًا.",
-  "mohamed-ahmed": "محمد أحمد",
-  "ali-el-shrief": "علي شريف",
-  "said-nagy": "قال ناجي",
-  "ali-hassan": "علي حسن",
-  "mostafa-hassan": "مصطفي حسن",
-  "alex-foster": "أليكس فوستر",
-  "jhon-dea": "محمد خالد",
+  "Ahmed-Bahnasy": "احمد بهنسي",
+  "Youssef-Hesham": "يوسف هشام",
+  
   "lets-check-our-photo-gall": "دعنا نريك الصور الخاص بنا",
   "trusted-by-over-less-than": "موثق به من قبل اكثر من <span> اربعة الف ونصف </span> شركة",
   "first-name-placeholder": "الاسم الأول",

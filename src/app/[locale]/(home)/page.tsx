@@ -4,7 +4,7 @@ import Information from "./_components/information/information";
 import NextIntlProvider from "@/components/providers/components/next-intl-provider";
 import Categories from "./_components/categories/categories";
 import { RouteProps } from "@/lib/types/route-props";
-import AboutUsHeaderPage from "./_components/about-us/about-us";
+import AboutUsHeaderPage from "./_components/about_Us/about-us";
 import BestSellerPage from "./_components/best-seller/page";
 import PopularProducts from "./_components/popular-products";
 import Testimonails from "./_components/testimonials/testimonials";

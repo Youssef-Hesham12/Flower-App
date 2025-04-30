@@ -1,7 +1,7 @@
-import AboutUsHeaderPage from "../(homepage)/_components/about-us/about-us";
-import Information from "../(homepage)/_components/information/information";
-import Testimonails from "../(homepage)/_components/testimonials/testimonials";
-import Companies from "../(homepage)/_components/trusted-companies/companies";
+import AboutUsHeaderPage from "../(home)/_components/about_Us/about-us";
+import Information from "../(home)/_components/information/information";
+import Testimonails from "../(home)/_components/testimonials/testimonials";
+import Companies from "../(home)/_components/trusted-companies/companies";
 
 export default function page() {
   return (
