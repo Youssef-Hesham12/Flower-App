@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { User } from "lucide-react";
-import { CiUser } from "react-icons/ci";
+
 import { FaUser } from "react-icons/fa";
 import { PiBagBold } from "react-icons/pi";
 import { getServerSession } from "next-auth";
