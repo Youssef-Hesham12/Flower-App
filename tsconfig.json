@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -23,9 +19,7 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "target": "ES2017"
   },
@@ -35,9 +29,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/[locale]/(homepage)/_components/popular-products/loading.js",
-    "src/app/[locale]/(homepage)/_components/popular-products/index.js"
+    "src/app/[locale]/(homepage)/_components/popular-products/index.js",
+    "src/app/_offline.js",
+    "src/app/[locale]/all-products/_components/StarRating.jsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

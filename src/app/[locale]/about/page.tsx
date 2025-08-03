@@ -1,18 +1,29 @@
-import AboutUsHeaderPage from "../(home)/_components/about_Us/about-us";
-import Information from "../(home)/_components/information/information";
-import Testimonails from "../(home)/_components/testimonials/testimonials";
-import Companies from "../(home)/_components/trusted-companies/companies";
+import AboutUsHeaderPage from "../(homepage)/_components/about-us/about-us";
+import Information from "../(homepage)/_components/information/information";
+import Testimonails from "../(homepage)/_components/testimonials/testimonials";
+import Companies from "../(homepage)/_components/trusted-companies/companies";
+import InstagramRose from "./_components/instagram-rose";
+import OurTeam from "./_components/our-team";
 
-export default function page() {
+export default function Page() {
   return (
-    <main className="container">
+    <main>
+      {/*  About-us */}
       <AboutUsHeaderPage />
-      {/* Information section */}
+
+      {/* Testimonails */}
+      <Testimonails />
+
+      {/* Our Team */}
+      <OurTeam />
+
+      {/* Information */}
       <Information />
 
-      {/* Testimonails section */}
-      <Testimonails />
-      {/*Trusted companies  */}
+      {/* Instagram */}
+      <InstagramRose />
+
+      {/* Trusted companies */}
       <Companies />
     </main>
   );

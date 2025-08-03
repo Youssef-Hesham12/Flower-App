@@ -12,28 +12,28 @@ export default function Navigation({ col }: { col?: boolean }) {
       className={`flex gap-5 ${col && "flex-col items-center"}  text-custom-blue-900 font-medium rtl:font-semibold text-base`}
     >
       {" "}
-      <Link className={pathname === "/" ? "text-[#F82BA9]" : ""} href={"/"}>
+      <Link className={pathname === "/" ? "text-rose-500" : ""} href={"/"}>
         {t("home")}
       </Link>
-      <Link className={pathname === "/All-Categories" ? "text-[#F82BA9]" : ""} href={"/All-Categories"}>
+      <Link className={pathname === "/all-products" ? "text-rose-500" : ""} href={"/all-products"}>
         {" "}
-        {t("All Categories")}
+        {t("products")}
       </Link>
-      <Link className={pathname === "/about" ? "text-[#F82BA9]" : ""} href={"/about"}>
+      <Link className={pathname === "/about" ? "text-rose-500" : ""} href={"/about"}>
         {" "}
         {t("about")}
       </Link>
-      <Link className={pathname === "/contact" ? "text-[#F82BA9]" : ""} href={"/contact"}>
+      <Link className={pathname === "/contact" ? "text-rose-500" : ""} href={"/contact"}>
         {" "}
         {t("contact")}
       </Link>
       {locale === "en" ? (
-        <Link locale="ar" className="bg-[#F82BA9] text-white rounded-lg p-1" href={pathname}>
-          Ar
+        <Link locale="ar" className="text-rose-800 font-bold " href={pathname}>
+          عربي
         </Link>
       ) : (
-        <Link locale="en" className="bg-[#F82BA9] rounded-lg p-1 text-white p-2font-bold" href={pathname}>
-          En
+        <Link locale="en" className="text-rose-800 font-bold" href={pathname}>
+          English
         </Link>
       )}
     </nav>

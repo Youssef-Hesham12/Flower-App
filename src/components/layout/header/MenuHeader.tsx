@@ -24,10 +24,10 @@ export default function MenuHeader() {
         {!menuOpen && (
           <motion.div
             key="menu"
-            initial={{ opacity: 0.7, x: locale == "ar" ? -360 : 360 }}
+            initial={{ opacity: 0.7, x: locale == "ar" ? -230 : 230 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0.7, x: locale == "en" ? -360 : 360 }}
-            transition={{ duration: 0.2 }}
+            exit={{ opacity: 0.7, x: locale == "en" ? -230 : 230 }}
+            transition={{ duration: 0.1 }}
             className={`flex gap-5 text-custom-blue-900 font-medium rtl:font-semibold text-base fixed bg-white top-0 ltr:right-0 rtl:left-0 w-1/2 h-50 flex-col p-6 justify-center !z-[100]  transition delay-300 duration-300 ease-in-out`}
           >
             <div className="flex flex-row-reverse justify-between items-center">

@@ -9,7 +9,7 @@ const handleI18nRouting = createMiddleware(routing);
 
 const authMiddleware = withAuth(
   function onSuccess(req) {
-   
+    // Apply i18n routing after authentication is verified
     return handleI18nRouting(req);
   },
   {
@@ -32,10 +32,10 @@ export default function middleware(req: NextRequest) {
     "i",
   );
 
-  
+  // Check if the request is for a private page
   const isPrivatePage = privatePathnameRegex.test(req.nextUrl.pathname);
 
-  
+  // Apply authentication middleware for private pages
   if (isPrivatePage) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return (authMiddleware as any)(req);

@@ -28,7 +28,7 @@ export default function Testimonails() {
     {
       id: "1",
       image: "/assets/images/testimonials/1.png",
-      name: t("Youssef-Hesham"),
+      name: t("ahmed-mohamed"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 5,
@@ -37,7 +37,7 @@ export default function Testimonails() {
     {
       id: "2",
       image: "/assets/images/testimonials/2.png",
-      name: t("Youssef-Hesham"),
+      name: t("mohamed-ahmed"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 4,
@@ -46,7 +46,7 @@ export default function Testimonails() {
     {
       id: "3",
       image: "/assets/images/testimonials/3.png",
-      name: t("Youssef-Hesham"),
+      name: t("ali-el-shrief"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 5,
@@ -55,7 +55,7 @@ export default function Testimonails() {
     {
       id: "4",
       image: "/assets/images/testimonials/4.png",
-      name: t("Youssef-Hesham"),
+      name: t("said-nagy"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 3,
@@ -64,7 +64,7 @@ export default function Testimonails() {
     {
       id: "5",
       image: "/assets/images/testimonials/2.png",
-      name: t("Youssef-Hesham"),
+      name: t("ali-hassan"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 4,
@@ -73,7 +73,7 @@ export default function Testimonails() {
     {
       id: "6",
       image: "/assets/images/testimonials/4.png",
-      name: t("Youssef-Hesham"),
+      name: t("mostafa-hassan"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 4,
@@ -82,7 +82,7 @@ export default function Testimonails() {
     {
       id: "7",
       image: "/assets/images/testimonials/1.png",
-      name: t("Youssef-Hesham"),
+      name: t("alex-foster"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 5,
@@ -91,7 +91,7 @@ export default function Testimonails() {
     {
       id: "8",
       image: "/assets/images/testimonials/2.png",
-      name: t("Ahmed-Bahnasy"),
+      name: t("jhon-dea"),
       role: t("customer"),
       feedback: t("testimonials-feedback"),
       ratting: 3,
@@ -126,7 +126,7 @@ export default function Testimonails() {
   }, [api]);
 
   return (
-    <section className="bg-birthday-image bg-cover bg-center my-20 pt-20 pb-32 hidden md:block">
+    <section className="bg-[url('/assets/images/testimonials/Birthday-background.png')] bg-cover bg-center my-20 pt-20 pb-32 hidden md:block">
       <div className="container">
         <Carousel
           setApi={setApi}

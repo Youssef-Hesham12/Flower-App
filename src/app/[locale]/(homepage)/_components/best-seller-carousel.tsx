@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Carousel,
   CarouselContent,
@@ -7,11 +8,11 @@ import {
 } from "@/components/ui/carousel";
 import ProductCard from "@/components/features/product/product-card";
 
-type CarouselComponentProps = {
-  bestProducts: Product[];
-};
+// type CarouselComponentProps = {
+//   bestProducts: Product[];
+// };
 
-export default function CarouselComponent({ bestProducts }: CarouselComponentProps) {
+export default function CarouselComponent({ bestProducts }: any) {
   return (
     <Carousel
       opts={{
@@ -21,7 +22,7 @@ export default function CarouselComponent({ bestProducts }: CarouselComponentPro
     >
       {/* Content */}
       <CarouselContent key={Math.random()} className="realative ">
-        {bestProducts?.map((product: Product) => (
+        {bestProducts?.products?.map((product: Product) => (
           <CarouselItem
             key={product._id}
             className=" rounded-tl-[50px] rounded-tr-[100px] rounded-bl-[100px] rounded-br-[100px] bg-white rounded-3xl  mr-1 px-2 !w-[15rem] lg:w-[20rem] sm:basis-3/6 md:basis-6/12 lg:basis-4/12 basis-full"

@@ -24,6 +24,7 @@ export default async function Cart() {
         <Image src="/assets/images/empty-cart.png" alt="empty-cart" width={180} height={0} />
       </div>
     );
+  console.log(cart);
 
   return (
     <section className="container grid grid-cols-12 gap-3 my-10  ">
@@ -60,7 +61,7 @@ export default async function Cart() {
             </div>
             <div className="flex justify-between ">
               <p className="font-bold text-custom-blue-900 ">{t("discount")}:</p>
-              <p className="text-gray-500 ">%{cart?.discount}</p>
+              <p className="text-gray-500 ">%{cart?.discount ? cart?.discount : 0}</p>
             </div>
             <div className="flex justify-between ">
               <p className="font-bold text-custom-blue-900 ">{t("shipping")}:</p>
@@ -74,7 +75,11 @@ export default async function Cart() {
           <div className="flex justify-between -mt-5">
             <p className="font-bold text-custom-blue-900 ">{t("total")}</p>
             <p className="font-bold text-custom-rose-900 ">
-              ${cart?.totalPrice * 0.2 + cart?.totalPriceAfterDiscount}
+              $
+              {(cart?.totalPrice * 0.2 + cart?.totalPriceAfterDiscount
+                ? cart?.totalPriceAfterDiscount
+                : cart?.totalPrice
+              ).toFixed(2)}
             </p>
           </div>
           <div className=" flex justify-center">

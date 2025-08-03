@@ -17,10 +17,10 @@ export default function useRemoveCartItem() {
       return response;
     },
     onSuccess: () => {
-      toast.success(t("login-successful"));
+      toast.success(t("delete-successfully"));
     },
     onError: () => {
-      toast.error(t("login-failed"));
+      toast.error(t("delete-failed"));
     },
   });
 

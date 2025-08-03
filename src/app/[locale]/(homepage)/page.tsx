@@ -4,7 +4,7 @@ import Information from "./_components/information/information";
 import NextIntlProvider from "@/components/providers/components/next-intl-provider";
 import Categories from "./_components/categories/categories";
 import { RouteProps } from "@/lib/types/route-props";
-import AboutUsHeaderPage from "./_components/about_Us/about-us";
+import AboutUsHeaderPage from "./_components/about-us/about-us";
 import BestSellerPage from "./_components/best-seller/page";
 import PopularProducts from "./_components/popular-products";
 import Testimonails from "./_components/testimonials/testimonials";
@@ -28,28 +28,28 @@ export default async function Page({ searchParams }: RouteProps) {
           {/* Category section */}
           <Categories payload={payload} />
 
-          {/*---------------------- Special offer section -----------------------*/}
+          {/* Special offer section */}
           <SpecialOffer />
 
-          {/*-------------------- Information section----------------------------- */}
+          {/* Information section */}
           <Information />
 
-          {/* -----------------Best seller section------------------ */}
+          {/* Best seller section */}
           <BestSellerPage />
 
-          {/*---------------------- Popular products section -------------------*/}
+          {/* Popular products section */}
           <PopularProducts categories={categories} searchParams={searchParams} />
 
-          {/*------------------------ About us section -----------------*/}
+          {/* About us section */}
           <AboutUsHeaderPage />
 
-          {/*------------------ Gallery section --------------------*/}
+          {/* Gallery section */}
           <Gallery />
 
-          {/*--------------------------- Testimonails section ---------------------------*/}
+          {/* Testimonails section */}
           <Testimonails />
 
-          {/*--------------------------------Trusted companies  --------------------*/}
+          {/*Trusted companies  */}
           <Companies />
         </main>
       </NextIntlProvider>

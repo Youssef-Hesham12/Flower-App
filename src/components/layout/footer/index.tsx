@@ -22,13 +22,11 @@ export default function Footer() {
       {/* Content */}
       <div className="relative z-10">
         {/* Navigation */}
-        <div className="flex justify-center md:gap-14 lg:gap-20 gap-5 mx-auto md:font-bold font-semibold md:text-base text-[0.6rem] sm:text-sm text-custom-blue-900">
-          <Link href={"/"}> {t("about-us")}</Link>
-          <Link href={"/"}> {t("store-location")}</Link>
-          <Link href={"/"}> {t("contact")}</Link>
-          <Link href={"/"}> {t("delivery")}</Link>
-          <Link href={"/"}> {t("policy")}</Link>
-          <Link href={"/"}> {t("FAQS")}</Link>
+        <div className="flex justify-center md:gap-16 lg:gap-24 gap-5 mx-auto md:font-bold font-semibold md:text-base text-[1rem] sm:text-sm text-custom-blue-900">
+          <Link href={"/about"}> {t("about-us")}</Link>
+          <Link href={"/contact"}> {t("contact")}</Link>
+          <Link href={"/delivery"}> {t("delivery")}</Link>
+          <Link href={"/policy"}> {t("policy")}</Link>
         </div>
 
         {/* Headline */}
@@ -58,6 +56,15 @@ export default function Footer() {
             {t("subscribe")}
             <Arrow />
           </button>
+        </div>
+        <div className="flex justify-center">
+          <Link
+            href={"https://www.linkedin.com/in/badr-shaban-321636181/"}
+            target="_blank"
+            className="text-center mt-5 md:text-base text-sm font-medium text-custom-blue-500"
+          >
+            Developed by Badr
+          </Link>
         </div>
       </div>
     </div>
